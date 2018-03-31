@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>Pesquisar | Web Application</title>
+</h:head>
+<h:body>
+	<h1>Pesquise</h1>
+	<fieldset>
+		<legend>Informe o CPF do segurado</legend>
+		<h:form>
+			<table>
+				<tr>
+					<td>CPF</td>
+					<td><h:inputText></h:inputText></td>
+					<td><h:commandButton value="Pesquisar" action="#{seguroBean.pesquisar}"></h:commandButton></td>
+				</tr>
+			</table>
+		</h:form>
+	</fieldset>
+	<br/>
+	<h:form>
+		<h:commandButton value="Voltar ao Menu" action="menu"/>
+	</h:form>
+</h:body>
+</html>
